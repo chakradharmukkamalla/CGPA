@@ -151,7 +151,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>VIT GPA & Projected CGPA Calculator</h1>
+      <h1> GPA & CGPA Calculator</h1>
 
       {/* GPA Calculator */}
       <div className="calculator-section">
@@ -224,7 +224,7 @@ function App() {
 
       {/* Projected CGPA Calculator */}
       <div className="calculator-section">
-        <h2>Projected CGPA Calculator</h2>
+        <h2>CGPA Calculator</h2>
         <div className="form">
           <div className="input-group">
             <input
@@ -279,7 +279,7 @@ function App() {
         </div>
 
         {projectedCgpa !== null && (
-          <h3 className="gpa-result">Projected CGPA: {projectedCgpa}</h3>
+          <h3 className="gpa-result">CGPA: {projectedCgpa}</h3>
         )}
       </div>
     </div>
