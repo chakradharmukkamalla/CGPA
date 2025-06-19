@@ -1,10 +1,12 @@
+/* Base styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f4f6f8;
   color: #333;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
-
 
 .container {
   max-width: 800px;
@@ -15,7 +17,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-
+/* Headings */
 h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -40,13 +42,13 @@ h2 {
   color: #17a2b8;
 }
 
-
+/* Forms */
 .form,
 .input-group {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 12px;
   margin-bottom: 1.5rem;
 }
 
@@ -64,7 +66,7 @@ input:focus {
   border-color: #17a2b8;
 }
 
-
+/* Buttons */
 button {
   padding: 10px 20px;
   font-size: 1rem;
@@ -89,6 +91,7 @@ button {
   padding: 8px 16px;
   font-size: 0.9rem;
   color: #fff;
+  border-radius: 6px;
 }
 
 .edit-btn {
@@ -107,21 +110,23 @@ button {
   background-color: #c82333;
 }
 
-
+/* Subject List */
 .subject-list {
   margin-top: 2rem;
 }
 
 .subject-list ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .subject-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 12px;
   padding: 14px 16px;
   background: #f1f4f6;
   border-radius: 6px;
@@ -134,7 +139,6 @@ button {
   font-weight: 500;
 }
 
-
 .edit-grade-input {
   width: 48px;
   padding: 6px;
@@ -144,27 +148,7 @@ button {
   border-radius: 4px;
 }
 
-
-@media (max-width: 600px) {
-  .form,
-  .input-group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .subject-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .edit-btn,
-  .delete-btn {
-    width: 100%;
-    margin-top: 0.5rem;
-  }
-}
-
-
+/* Utility Classes */
 .text-center {
   text-align: center;
 }
@@ -183,4 +167,63 @@ button {
 
 .max-w-300 {
   max-width: 300px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .gpa-result {
+    font-size: 1.1rem;
+  }
+
+  .form,
+  .input-group {
+    flex-direction: column;
+    align-items: center; /* Center form items */
+    gap: 8px;
+  }
+
+  input {
+    width: 90%;
+    max-width: 300px;
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    flex: none; /* Prevent flex stretching */
+  }
+
+  button {
+    width: 90%;
+    max-width: 200px;
+    font-size: 0.95rem;
+    padding: 9px 12px;
+  }
+
+  .subject-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .edit-grade-input {
+    width: 60px;
+  }
 }
