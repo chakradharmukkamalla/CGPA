@@ -205,7 +205,7 @@ function App() {
           <li>
             <strong>Understanding Credits:</strong>
             <ul>
-              <li><strong>Registered Credits:</strong> Total credits registered <em>till now</em> (including <strong>backlogs</strong>)</li>
+              <li><strong>Registered Credits:</strong> Total credits registered(Only Graded) <em>till now</em> (including <strong>backlogs</strong>)</li>
               <li><strong>Current Credits & GPA Obtained:</strong> Indicates the <strong>current semester's GPA</strong>, excluding grade improvements and re-registered subjects. Use the <strong>GPA calculator</strong> above to calculate this specifically.</li>
             </ul>
           </li>
