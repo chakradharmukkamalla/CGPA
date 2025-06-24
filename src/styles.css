@@ -317,5 +317,33 @@ button {
 .note-section p {
   margin: 8px 0;
 }
+/* === Fix for keeping buttons aligned in desktop view === */
+@media (min-width: 768px) {
+  .subject-item {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .subject-item > span,
+  .subject-item > div,
+  .subject-item > button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .subject-name {
+    flex-grow: 1;
+    min-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .subject-item {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+}
 
 }

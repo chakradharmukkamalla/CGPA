@@ -149,10 +149,12 @@ function App() {
                     <input className="edit-grade-input" value={editingGrade} onChange={e => setEditingGrade(e.target.value)} maxLength={1} onBlur={saveEditing} onKeyDown={onEditKeyDown} autoFocus /> :
                     <span className="grade-text">{s.grade}</span>
                 }</span>
-                {editingIndex !== idx && <>
-                  <button className="edit-btn" onClick={() => startEditing(idx)}>Edit</button>
-                  <button className="delete-btn" onClick={() => deleteSubject(idx)}>Delete</button>
-                </>}
+                {editingIndex !== idx && (
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                <button className="edit-btn" onClick={() => startEditing(idx)}>Edit</button>
+                <button className="delete-btn" onClick={() => deleteSubject(idx)}>Delete</button>
+                </div>
+                )}
               </li>
             )}</ul>
           }
