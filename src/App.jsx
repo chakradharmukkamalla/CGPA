@@ -195,10 +195,10 @@ function App() {
         <h2>📢 What's New in This Calculator?</h2>
         <ul>
           <li>
-            <strong>Grade Improvement & Arrear Calculation:</strong> Now includes support for <em>grade improvement</em> and <em>arrear subject</em> calculations to compute a more accurate <strong>CGPA</strong>.
+            <strong>Grade Improvement & Arrear Calculation:</strong> Now includes support for <em>grade improvement</em> and <em>arrear subject,</em> calculations to compute a more accurate <strong>CGPA</strong>.
           </li>
           <li>
-            <strong>Additional Information Clarification:</strong>
+            <strong>Additional Clarification:</strong>
             <ul>
               <li>For <strong>re-registered subjects</strong>, enter <strong>previous grade as 'F'</strong>.</li>
               <li>For <strong>All N Grade Obtained</strong>, enter <strong> grade as 'F'</strong>.</li>
