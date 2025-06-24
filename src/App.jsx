@@ -186,7 +186,7 @@ function App() {
           <button onClick={addAdditional} className="add-btn">+ Add Info</button>
         </div>
 
-        {projectedCgpa !== null && <h3 className="gpa-result">Projected CGPA: {projectedCgpa}</h3>}
+        {projectedCgpa !== null && <h3 className="gpa-result">CGPA: {projectedCgpa}</h3>}
       </div>
 
        <div className="note-section">
@@ -199,6 +199,7 @@ function App() {
             <strong>Additional Information Clarification:</strong>
             <ul>
               <li>For <strong>re-registered subjects</strong>, enter <strong>previous grade as 'F'</strong>.</li>
+              <li>For <strong>All N Grade Obtained</strong>, enter <strong> grade as 'F'</strong>.</li>
               <li>For <strong>grade improvement</strong>, enter the <strong>actual previous grade</strong>.</li>
             </ul>
           </li>
@@ -215,11 +216,10 @@ function App() {
         <p>
           This tool is built to calculate both <strong>GPA</strong> and <strong> CGPA</strong> precisely, following VIT's academic structure. Use it for planning and tracking your academic progress effectively.
         </p>
-
         <h3>📬 Found a Mistake or Have Feedback?</h3>
         <p>
           If you notice any <em>discrepancies or errors</em>, please{' '}
-          <a href="mailto:yettodecided@gmail.com">Reach Me Out</a> — your feedback helps make this tool better!
+         <a href="https://in.linkedin.com/in/chakradharmukkamalla" target="_blank">Reach Me Out</a> — your feedback helps make this tool better!
         </p>
       </div>
     </div>
